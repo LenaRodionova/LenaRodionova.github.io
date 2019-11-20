@@ -2,3 +2,7 @@
 /dist
 .DS_Store
 .idea
+Thumbs.db
+.sublime
+.vscode
+.log

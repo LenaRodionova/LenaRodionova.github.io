@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta name="author" content="Родионова Елена">
-  <meta name="description" content="Страница о проекте">
+  <meta content="Родионова Елена" name="author">
+  <meta content="Страница о проекте" name="description">
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>О проекте</title>
@@ -17,9 +17,10 @@
     <p class="header__service-name">NewsAnalyzer</p>
     <ul class="header__menu-list">
       <li class="header__menu-item"><a
-          class="header__menu-link header__menu-link_inactive" href="index.html">Главная</a></li>
+          class="header__menu-link header__menu-link_inactive" href="index.html" target="_self">Главная</a></li>
       <li class="header__menu-item header__menu-item_selected-black"><a
-          class="header__menu-link header__menu-link_selected-black" href="./about.html">О проекте</a></li>
+          class="header__menu-link header__menu-link_selected-black" href="./about.html" target="_self">О проекте</a>
+      </li>
     </ul>
   </nav>
 </header>
@@ -49,25 +50,25 @@
   <div class="tech__cards">
     <div class="tech__card">
       <p class="tech__card-title">HTML</p>
-      <img src="<%=require('../images/html.png')%>" alt="Логотип html">
+      <img alt="Логотип html" src="<%=require('../images/html.png')%>">
     </div>
     <div class="tech__card">
       <p class="tech__card-title">CSS</p>
-      <img src="<%=require('../images/css.png')%>" alt="Логотип css">
+      <img alt="Логотип css" src="<%=require('../images/css.png')%>">
     </div>
     <div class="tech__card">
       <p class="tech__card-title">JavaScript</p>
-      <img src="<%=require('../images/js.png')%>" alt="Логотип javascript">
+      <img alt="Логотип javascript" src="<%=require('../images/js.png')%>">
     </div>
     <div class="tech__card">
       <p class="tech__card-title">Webpack</p>
-      <img src="<%=require('../images/webpack.png')%>" alt="Логотип webpack">
+      <img alt="Логотип webpack" src="<%=require('../images/webpack.png')%>">
     </div>
   </div>
 </section>
 
 <main class="main">
-  <img class="main__photo" src="<%=require('../images/author_avatar.png')%>" alt="Фотография автора">
+  <img alt="Фотография автора" class="main__photo" src="<%=require('../images/author_avatar.png')%>">
   <div class="main__text">
     <h2 class="main__title">Об авторе</h2>
     <p class="main__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
@@ -81,7 +82,7 @@
 <article class="history">
   <div class="title-link">
     <h2 class="title-link__title">История коммитов из GitHub</h2>
-    <a class="title-link__link title-link__link_disabled-when-small" href="#">Открыть в Github &#62;</a>
+    <a class="title-link__link title-link__link_disabled-when-small" href="https://github.com">Открыть в Github &#62;</a>
   </div>
   <div class="glide">
     <div class="glide__track" data-glide-el="track">
@@ -90,7 +91,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -105,7 +106,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -120,7 +121,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -135,7 +136,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -150,7 +151,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -165,7 +166,7 @@
           <div class="history__card">
             <p class="history__date">14 августа, 2019</p>
             <div class="history__user">
-              <img class="history__photo" src="<%=require('../images/user_photo.png')%>" alt="Автор коммита">
+              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
               <div class="history__personal">
                 <p class="history__username">Антон Долинин</p>
                 <p class="history__email">anton@yandex.ru</p>
@@ -190,7 +191,7 @@
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
     </div>
-    <button class="history__button">Открыть в Github &#62;</button>
+    <a href="https://github.com" class="history__button">Открыть в Github &#62;</a>
   </div>
 </article>
 
@@ -198,17 +199,17 @@
   <p class="footer__paragraph">&#169;2019 Supersite</p>
   <nav class="footer__menu">
     <ul class="footer__menu-list">
-      <li><a href="index.html" class="footer__menu-link">Главная</a></li>
-      <li><a href="about.html" class="footer__menu-link">О проекте</a></li>
-      <li><a href="https://praktikum.yandex.ru/" class="footer__menu-link">Яндекс.Практикум</a></li>
+      <li><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
+      <li><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
+      <li><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
     </ul>
   </nav>
   <div class="footer__links">
-    <a href="github.com" class="footer__links-link">
-      <img src="<%=require('../images/git_link.png')%>" alt="Логотип гита" class="footer__links-img">
+    <a class="footer__links-link" href="https://github.com">
+      <img alt="Логотип гита" class="footer__links-img" src="<%=require('../images/git_link.png')%>">
     </a>
-    <a href="facebook.com" class="footer__links-link">
-      <img src="<%=require('../images/fb_link.png')%>" alt="Логотип фейсбука" class="footer__links-img">
+    <a class="footer__links-link" href="https://facebook.com">
+      <img alt="Логотип фейсбука" class="footer__links-img" src="<%=require('../images/fb_link.png')%>">
     </a>
   </div>
 </footer>
