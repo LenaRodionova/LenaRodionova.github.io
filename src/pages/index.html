@@ -1,148 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width" name="viewport">
-    <title> Главная </title>
-    <link href='<%=htmlWebpackPlugin.files.chunks.main.css %>' rel="stylesheet">
-    <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
+   <meta name="author" content="Родионова Елена">
+   <meta name="description" content="Главная страница анализатора новостей">
+   <meta charset="UTF-8">
+   <meta content="width=device-width" name="viewport">
+   <title>Главная</title>
+   <link href='<%=htmlWebpackPlugin.files.chunks.main.css %>' rel="stylesheet">
+   <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
 </head>
 <body>
 
 <header class="header">
-    <nav class="header__menu">
-        <p class="header__service-name">NewsAnalyzer</p>
-        <ul class="header__menu-list">
-            <li class="header__menu-item header__menu-item_selected-white"><a
-                    class="header__menu-link header__menu-link_selected-white" href="./index.html"> Главная </a></li>
-            <li class="header__menu-item"><a class="header__menu-link header__menu-link_inactive" href="about.html"> О
-                проекте </a></li>
-        </ul>
-    </nav>
-    <div class="header__title">
-        <h1> Что в мире творится? </h1>
-        <p> Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю. </p>
-        <form name="find">
-            <label>
-                <input class="search" placeholder="Введите тему новости">
-                <button class="button" type="submit"> Поиск</button>
-            </label>
-        </form>
-    </div>
+   <nav class="header__menu">
+       <p class="header__service-name">NewsAnalyzer</p>
+       <ul class="header__menu-list">
+           <li class="header__menu-item header__menu-item_selected-white"><a
+                    class="header__menu-link header__menu-link_selected-white" href="./index.html">Главная</a></li>
+           <li class="header__menu-item"><a class="header__menu-link header__menu-link_inactive" href="about.html">О
+                проекте</a></li>
+       </ul>
+   </nav>
+   <div class="header__title">
+       <h1>Что в мире творится?</h1>
+       <p>Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+       <form name="find">
+           <label>
+               <input class="search" placeholder="Введите тему новости">
+               <button class="button" type="submit">Поиск</button>
+           </label>
+       </form>
+   </div>
 </header>
 
 <section class="preloader">
-    <div class="circle-preloader"></div>
-    <p> Идет поиск новостей... </p>
+   <div class="circle-preloader"></div>
+   <p>Идет поиск новостей...</p>
 </section>
 
 <section class="error">
-    <img src="<%=require('../images/not_found.png')%>">
-    <h3> Ничего не найдено </h3>
-    <p> К сожалению по вашему запросу ничего не найдено </p>
+   <img src="<%=require('../images/not_found.png')%>">
+   <h3>Ничего не найдено</h3>
+   <p>К сожалению по вашему запросу ничего не найдено</p>
 </section>
 
 <article class="finding">
-    <div class="title-link">
-        <h2 class="title-link__title"> Результаты поиска </h2>
-        <a class="title-link__link" href="analytics.html"> Посмотреть аналитику &#62; </a>
-    </div>
+   <div class="title-link">
+       <h2 class="title-link__title">Результаты поиска</h2>
+       <a class="title-link__link" href="analytics.html">Посмотреть аналитику &#62;</a>
+   </div>
 
-    <div class="finding__cards">
-        <!--пример карточки, которые потом будут создаваться через js-->
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+   <div class="finding__cards">
+       <!--пример карточки, которые потом будут создаваться через js-->
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-        <div class="finding__card">
-            <img src="<%=require('../images/news.jpg')%>">
-            <div class="finding__card-content">
-                <p> 2 августа, 2019 </p>
-                <h3> Национальное достояние – парки </h3>
-                <p> В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+       <div class="finding__card">
+           <img src="<%=require('../images/news.jpg')%>">
+           <div class="finding__card-content">
+               <p>2 августа, 2019</p>
+               <h3>Национальное достояние – парки</h3>
+               <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
                     складываться система национальных парков – охраняемых территорий,
-                    где и сегодня каждый может приобщиться к природе. </p>
-                <a href="#"> Лента.ру </a></div>
-        </div>
-    </div>
-    <button class="finding_button-more">Показать ещё</button>
+                    где и сегодня каждый может приобщиться к природе.</p>
+               <a href="#">Лента.ру</a></div>
+       </div>
+   </div>
+   <button class="finding_button-more">Показать ещё</button>
 </article>
 
 <main class="main">
-    <img class="main__photo" src="<%=require('../images/author_avatar.png')%>">
-    <div class="main__text">
-        <h2 class="main__title">Об авторе </h2>
-        <p class="main__paragraph"> Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+   <img class="main__photo" src="<%=require('../images/author_avatar.png')%>">
+   <div class="main__text">
+       <h2 class="main__title">Об авторе</h2>
+       <p class="main__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
             занимаетесь,
-            какими технологиями разработки владете. </p>
-        <p class="main__paragraph"> Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
-            и чем можете помочь потенциальным заказчикам. </p>
-    </div>
+            какими технологиями разработки владете.</p>
+       <p class="main__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились,
+            и чем можете помочь потенциальным заказчикам.</p>
+   </div>
 </main>
 
 <footer class="footer">
-    <p> &#169;2019 Supersite </p>
-    <nav class="footer__menu">
-        <ul>
-            <li><a href="./index.html">Главная</a></li>
-            <li><a href="about.html">О проекте</a></li>
-            <li><a href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
-        </ul>
-    </nav>
-    <div class="footer__link">
-        <a href="github.com">
-            <img src="<%=require('../images/git_link.png')%>">
-        </a>
-        <a href="facebook.com">
-            <img src="<%=require('../images/fb_link.png')%>">
-        </a>
-    </div>
+   <p>&#169;2019 Supersite</p>
+   <nav class="footer__menu">
+       <ul>
+           <li><a href="./index.html">Главная</a></li>
+           <li><a href="about.html">О проекте</a></li>
+           <li><a href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+       </ul>
+   </nav>
+   <div class="footer__link">
+       <a href="github.com">
+           <img src="<%=require('../images/git_link.png')%>">
+       </a>
+       <a href="facebook.com">
+           <img src="<%=require('../images/fb_link.png')%>">
+       </a>
+   </div>
 </footer>
 </body>
 </html>
