@@ -1,6 +1,6 @@
 .history__user {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 800px) {

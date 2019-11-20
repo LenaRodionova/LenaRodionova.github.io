@@ -1,9 +1,9 @@
 .glide__slide {
-    width: 33%;
+  width: 33%;
 }
 
 @media (max-width: 600px) {
-    .glide__slide:first-of-type {
-        margin-left: 16px;
-    }
+  .glide__slide:first-of-type {
+    margin-left: 16px;
+  }
 }

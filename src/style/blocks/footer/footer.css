@@ -1,56 +1,20 @@
-@import "__menu/footer__menu.css";
-@import "__link/footer__link.css";
+@import url("__menu/footer__menu.css");
+@import url("__links/footer__links.css");
+@import url('./__paragraph/footer__paragraph.css');
+@import url('./__menu-list/footer__menu-list.css');
+@import url('./__links-link/footer__links-link.css');
+@import url('./__links-img/footer__links-img.css');
+@import url('./__menu-link/footer__menu-link.css');
 
 .footer {
-    position: relative;
-    height: 70px;
+  position: relative;
+  height: 70px;
 }
-
-.footer ul {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    padding-inline-start: 0;
-}
-
-.footer img {
-    width: 20px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #1a1b22;
-    font-family: Roboto Regular, serif;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-.footer p {
-    position: absolute;
-    top: 10%;
-    left: 4%;
-    font-family: Roboto Regular, serif;
-    font-size: 16px;
-    line-height: 22px;
-    color: #b6bcbf;
-}
-
 
 @media (max-width: 600px) {
-    .footer {
-        height: 225px;
-        margin-left: 8%;
-    }
-
-    .footer ul {
-        padding-inline-start: 0px;
-        flex-direction: column;
-    }
-
-    .footer p {
-        position: relative;
-        top: 75%;
-        left: 0;
-    }
+  .footer {
+    height: 225px;
+    margin-left: 8%;
+  }
 }
 

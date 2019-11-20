@@ -1,12 +1,12 @@
 .analyticDay__graph_count {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    color: #b6bcbf;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  color: #b6bcbf;
 }
 
 @media (max-width: 320px) {
-    .analyticDay__graph_count {
-        display: none;
-    }
+  .analyticDay__graph_count {
+    display: none;
+  }
 }

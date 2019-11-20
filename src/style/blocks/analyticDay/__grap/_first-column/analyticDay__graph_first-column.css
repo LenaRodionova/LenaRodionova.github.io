@@ -1,17 +1,17 @@
 .analyticDay__graph_first-column {
-    width: 10%;
-    font-size: 12px;
-    line-height: 16px;
+  width: 10%;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 @media (max-width: 768px) {
-    .analyticDay__graph_first-column {
-        width: 10%;
-    }
+  .analyticDay__graph_first-column {
+    width: 10%;
+  }
 }
 
 @media (max-width: 600px) {
-    .analyticDay__graph_first-column {
-        width: 20%;
-    }
+  .analyticDay__graph_first-column {
+    width: 20%;
+  }
 }

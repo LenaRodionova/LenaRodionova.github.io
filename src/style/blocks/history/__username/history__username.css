@@ -1,12 +1,12 @@
 .history__username {
-    font-size: 26px;
-    line-height: 30px;
-    font-family: Roboto Slab, serif;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: Roboto Slab, serif;
 }
 
 @media (max-width: 800px) {
-    .history__username {
-        font-size: 20px;
-        line-height: 30px;
-    }
+  .history__username {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

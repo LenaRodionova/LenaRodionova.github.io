@@ -2,18 +2,18 @@
 @import url('__link/title-link__link.css');
 
 .title-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 86%;
-    margin-left: 7%;
-    padding-top: 4%;
-    font-family: Roboto Slab, serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 86%;
+  margin-left: 7%;
+  padding-top: 4%;
+  font-family: Roboto Slab, serif;
 }
 
 
 @media (max-width: 600px) {
-    .title-link {
-        flex-direction: column;
-    }
+  .title-link {
+    flex-direction: column;
+  }
 }

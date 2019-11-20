@@ -6,25 +6,25 @@
 @import url('__title/header__title.css');
 
 .header {
-    background-image: url("../../../images/main_img.jpg");
-    background-position: center;
-    height: 576px;
-    color: #ffffff;
-    background-size: auto;
+  background-image: url("../../../images/main_img.jpg");
+  background-position: center;
+  height: 576px;
+  color: #ffffff;
+  background-size: auto;
 }
 
 .header_white {
-    background-image: none;
+  background-image: none;
 }
 
 @media (max-width: 768px) {
-    .header {
-        height: 400px;
-    }
+  .header {
+    height: 400px;
+  }
 }
 
 @media (max-width: 450px) {
-    .header {
-        height: 530px;
-    }
+  .header {
+    height: 530px;
+  }
 }

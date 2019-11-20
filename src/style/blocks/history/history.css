@@ -10,12 +10,12 @@
 
 
 .history {
-    background-color: #f5f6f7;
-    height: 600px;
+  background-color: #f5f6f7;
+  height: 600px;
 }
 
 @media (max-width: 800px) {
-    .history {
-        height: 550px;
-    }
+  .history {
+    height: 550px;
+  }
 }

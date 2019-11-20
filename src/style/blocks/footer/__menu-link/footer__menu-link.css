@@ -1,6 +1,7 @@
-.customers__paragraph {
+.footer__menu-link {
+  text-decoration: none;
+  color: #1a1b22;
   font-family: Roboto Regular, serif;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 5%;
 }
