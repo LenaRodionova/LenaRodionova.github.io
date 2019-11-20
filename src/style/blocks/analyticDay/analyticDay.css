@@ -1,0 +1,14 @@
+@import url('__grap/analyticDay__graph.css');
+@import url('__graph-column/analyticDay__graph-column.css');
+@import url('__title/analyticDay__title.css');
+@import url('__grap/_column-paragraph/analyticDay__graph_column-paragraph.css');
+
+.analyticDay {
+    background-color: #f5f6f7;
+    height: 730px;
+    padding: 5% 5%;
+}
+
+.analyticDay .item {
+    /*height: 5%;*/
+}

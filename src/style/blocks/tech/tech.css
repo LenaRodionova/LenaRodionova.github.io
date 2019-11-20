@@ -1,0 +1,17 @@
+@import url('__cards/tech__cards.css');
+@import url('__title/tech__title.css');
+@import url('__card/tech__card.css');
+@import url('__card-title/tech__card-title.css');
+
+.tech {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f6f7;
+    padding: 5% 10%;
+}
+
+@media (max-width: 800px) {
+    .tech {
+        flex-direction: column;
+    }
+}

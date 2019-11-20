@@ -1,0 +1,20 @@
+@import url('__title/main__title.css');
+@import url('__paragraph/main__paragraph.css');
+@import url('__photo/main__photo.css');
+@import url('__text/main__text.css');
+@import url('__photo-container/main__photo-container.css');
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 4%;
+    padding: 5% 10%;
+}
+
+
+@media (max-width: 767px) {
+    .main {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+}

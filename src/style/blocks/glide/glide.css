@@ -1,0 +1,15 @@
+@import url('__slide/glide__slide.css');
+@import url('__bullets/glide__bullets.css');
+@import url('__arrows/glide__arrows.css');
+@import url('__arrow/glide__arrow.css');
+@import url('__bullet/glide__bullet.css');
+
+.glide {
+    position: relative;
+    margin-top: 3%;
+}
+
+/*.glide__slides {*/
+/*box-shadow: inset 10px 10px 10px 10px red;*/
+/*background: red;*/
+/*}*/

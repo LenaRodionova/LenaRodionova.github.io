@@ -1,0 +1,10 @@
+@import url('_disabled/title-link__link_disabled-when-small.css');
+
+.title-link__link {
+    font-family: Roboto Regular, serif;
+    text-decoration: none;
+    color: #1a1b22;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+}

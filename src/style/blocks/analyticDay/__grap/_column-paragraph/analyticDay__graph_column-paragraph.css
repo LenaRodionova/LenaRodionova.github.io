@@ -1,0 +1,10 @@
+.analyticDay__graph_column-paragraph {
+    font-size: 18px;
+    width: 10%;
+}
+
+@media (max-width: 600px) {
+    .analyticDay__graph_column-paragraph {
+        width: 20%;
+    }
+}

@@ -1,0 +1,19 @@
+@import url('_white/header__menu_white.css');
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 50px;
+    border-bottom: 1.5px solid;
+    border-bottom-color: rgba(196, 196, 196, 0.5);
+}
+
+@media (max-width: 450px) {
+    .header__menu {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}

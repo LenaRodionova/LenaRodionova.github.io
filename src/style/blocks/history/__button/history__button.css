@@ -1,0 +1,26 @@
+.history__button {
+    display: none;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    background-color: #f5f6f7;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    font-family: Roboto Regular, serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    border: 2px solid #000000;
+}
+
+.history__button:hover {
+    background-color: rgb(232, 232, 233);
+}
+
+@media (max-width: 600px) {
+    .history__button {
+        display: block;
+    }
+}

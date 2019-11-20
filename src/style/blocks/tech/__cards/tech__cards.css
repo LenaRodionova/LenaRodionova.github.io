@@ -1,0 +1,17 @@
+.tech__cards {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+@media (max-width: 768px) {
+    .tech__cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .tech__cards {
+        flex-wrap: wrap;
+    }
+}

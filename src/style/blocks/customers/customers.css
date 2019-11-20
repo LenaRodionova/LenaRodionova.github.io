@@ -1,0 +1,15 @@
+@import url('__title/customers__title.css');
+@import url('__paragraph/customers__paragraph.css');
+
+.customers {
+    width: 58%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .customers {
+        width: 85%;
+    }
+}

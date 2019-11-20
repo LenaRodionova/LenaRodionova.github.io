@@ -1,0 +1,4 @@
+.header__menu-item_selected-white {
+    border-bottom: 1.5px solid white;
+    margin-bottom: -1px;
+}

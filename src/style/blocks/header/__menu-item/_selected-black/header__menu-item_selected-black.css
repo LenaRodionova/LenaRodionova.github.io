@@ -1,0 +1,4 @@
+.header__menu-item_selected-black {
+    border-bottom: 1.5px solid black;
+    margin-bottom: -1px;
+}

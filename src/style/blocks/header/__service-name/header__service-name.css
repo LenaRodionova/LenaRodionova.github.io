@@ -1,0 +1,12 @@
+.header__service-name {
+    font-family: Roboto Slab, serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (max-width: 450px) {
+    .header__service-name {
+        font-size: 16px;
+    }
+}

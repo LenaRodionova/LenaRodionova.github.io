@@ -1,0 +1,66 @@
+.finding__card-content {
+    padding: 5% 5%;
+}
+
+.finding__card-content p:first-of-type {
+    color: #b6bcbf;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Roboto Regular, serif;
+}
+
+.finding__card-content a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #b6bcbf;
+    text-transform: uppercase;
+    font-family: Roboto Slab, serif;
+}
+
+.finding__card-content p {
+    margin-bottom: 5%;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Roboto Regular, serif;
+}
+
+.finding__card-content h3 {
+    font-family: Roboto Slab, serif;
+    font-size: 26px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) {
+    .finding__card-content h3 {
+        font-size: 22px;
+        line-height: 24px;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .finding__card-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 600px) {
+    .finding__card-content h3 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .finding__card-content {
+        padding: 2% 5%;
+    }
+
+    .finding__card-content p:first-of-type {
+        margin-bottom: 1%;
+    }
+}

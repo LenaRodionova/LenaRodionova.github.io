@@ -1,0 +1,16 @@
+@import url('_left/glide_arrow--left.css');
+@import url('_right/glide_arrow--right.css');
+
+.glide__arrow {
+    position: relative;
+    background: #1A1B22;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Roboto Regular, serif;
+    padding: 4px;
+    border: none;
+
+}

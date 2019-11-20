@@ -1,0 +1,12 @@
+.glide__arrows {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}
+
+
+@media (max-width: 900px) {
+    .glide__arrows {
+        display: none;
+    }
+}
