@@ -1,0 +1,29 @@
+.finding__card-paragraph:first-of-type {
+  color: #b6bcbf;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Roboto Regular, serif;
+}
+
+.finding__card-paragraph {
+  margin-bottom: 5%;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto Regular, serif;
+}
+
+@media (max-width: 768px) {
+  .finding__card-paragraph {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 600px) {
+  .finding__card-paragraph:first-of-type {
+    margin-bottom: 1%;
+  }
+}

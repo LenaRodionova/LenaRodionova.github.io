@@ -1,0 +1,28 @@
+.search-form__button {
+  width: 25%;
+  border: 0px;
+  border-radius: 100px;
+  height: 64px;
+  background-color: #2f71e5;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10% -60px -60px;
+}
+
+
+
+.search-form__button:hover {
+  background: #347eff;
+}
+
+.search-form__button:active {
+  background: #2a65cc;
+}
+
+@media (max-width: 725px) {
+  .search-form__button {
+    margin: 0;
+    width: 100%;
+  }
+}

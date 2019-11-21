@@ -1,18 +1,11 @@
+@import url('../../node_modules/normalize.css/normalize.css');
+@import url('blocks/body/body.css');
 @import url('blocks/header/header.css');
 @import url('blocks/analytics/analytics.css');
 @import url('blocks/analyticDay/analyticDay.css');
 @import url('blocks/footer/footer.css');
 @import url('fonts.css');
 
-li {
-  list-style-type: none;
-}
-
-p, a, ul, body, h1 {
+p, a, h1 {
   margin: 0 0 0 0;
-}
-
-body {
-  max-width: 1440px;
-  min-width: 320px;
 }

@@ -1,0 +1,11 @@
+.analyticDay__graph-column-paragraph {
+  font-family: Roboto Regular, serif;
+  font-size: 18px;
+  width: 10%;
+}
+
+@media (max-width: 600px) {
+  .analyticDay__graph-column-paragraph {
+    width: 20%;
+  }
+}

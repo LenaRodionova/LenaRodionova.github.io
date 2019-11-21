@@ -5,6 +5,7 @@
 @import url('./__links-link/footer__links-link.css');
 @import url('./__links-img/footer__links-img.css');
 @import url('./__menu-link/footer__menu-link.css');
+@import url('./__menu-item/footer__menu-item.css');
 
 .footer {
   position: relative;

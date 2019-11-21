@@ -1,4 +1,4 @@
-.analyticDay__graph_count {
+.analyticDay__graph-count {
   display: flex;
   justify-content: space-between;
   padding-left: 10%;
@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 320px) {
-  .analyticDay__graph_count {
+  .analyticDay__graph-count {
     display: none;
   }
 }

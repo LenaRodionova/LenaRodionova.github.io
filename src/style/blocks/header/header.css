@@ -4,6 +4,10 @@
 @import url('__menu-link/header__menu-link.css');
 @import url('__service-name/header__service-name.css');
 @import url('__title/header__title.css');
+@import url('search-form/search-form.css');
+@import url('__service-label/header__service-label.css');
+@import url('__paragraph/header__paragraph.css');
+@import url('_another-page/header_another-page.css');
 
 .header {
   background-image: url("../../../images/main_img.jpg");
@@ -13,17 +17,13 @@
   background-size: auto;
 }
 
-.header_white {
-  background-image: none;
-}
-
 @media (max-width: 768px) {
   .header {
     height: 400px;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 725px) {
   .header {
     height: 530px;
   }

@@ -10,10 +10,8 @@
   <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
-<script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
-<body>
-
-<header class="header_white">
+<body class="body">
+<header class="header header_another-page">
   <nav class="header__menu">
     <p class="header__service-name">NewsAnalyzer</p>
     <ul class="header__menu-list">
@@ -200,20 +198,20 @@
   <p class="footer__paragraph">&#169;2019 Supersite</p>
   <nav class="footer__menu">
     <ul class="footer__menu-list">
-      <li><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
-      <li><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
-      <li><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
     </ul>
   </nav>
   <div class="footer__links">
-    <a class="footer__links-link" href="https://github.com">
+    <a class="footer__links-link" href="https://https://github.com">
       <img alt="Логотип гита" class="footer__links-img" src="<%=require('../images/git_link.png')%>">
     </a>
-    <a class="footer__links-link" href="https://facebook.com">
+    <a class="footer__links-link" href="https://github.comk.com">
       <img alt="Логотип фейсбука" class="footer__links-img" src="<%=require('../images/fb_link.png')%>">
     </a>
   </div>
 </footer>
-
 </body>
+<script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </html>

@@ -10,9 +10,7 @@
   <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
-<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-<body>
-
+<body class="body">
 <header class="header">
   <nav class="header__menu">
     <p class="header__service-name">NewsAnalyzer</p>
@@ -25,24 +23,24 @@
     </ul>
   </nav>
   <div class="header__title">
-    <h1>Что в мире творится?</h1>
-    <p>Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-    <form name="find">
-      <input class="search" placeholder="Введите тему новости">
-      <button class="button" type="submit">Поиск</button>
+    <h1 class="header__service-label">Что в мире творится?</h1>
+    <p class="header__paragraph">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+    <form name="search-form">
+      <input class="search-form__input" placeholder="Введите тему новости">
+      <button class="search-form__button" type="submit">Поиск</button>
     </form>
   </div>
 </header>
 
 <section class="preloader">
-  <div class="circle-preloader"></div>
-  <p>Идет поиск новостей...</p>
+  <div class="preloader__circle"></div>
+  <p class="preloader__paragraph">Идет поиск новостей...</p>
 </section>
 
 <section class="error">
   <img alt="Ошибка" src="<%=require('../images/not_found.png')%>">
-  <h3>Ничего не найдено</h3>
-  <p>К сожалению по вашему запросу ничего не найдено</p>
+  <h3 class="error__title">Ничего не найдено</h3>
+  <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
 </section>
 
 <article class="finding">
@@ -56,71 +54,71 @@
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
       <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
   </div>
-  <button class="finding_button-more">Показать ещё</button>
+  <button class="finding__button-more">Показать ещё</button>
 </article>
 
 <main class="main">
@@ -139,9 +137,9 @@
   <p class="footer__paragraph">&#169;2019 Supersite</p>
   <nav class="footer__menu">
     <ul class="footer__menu-list">
-      <li><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
-      <li><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
-      <li><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
     </ul>
   </nav>
   <div class="footer__links">
@@ -154,5 +152,6 @@
   </div>
 </footer>
 </body>
+<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </html>
 

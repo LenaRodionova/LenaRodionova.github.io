@@ -3,4 +3,5 @@
 
 .header__menu-item {
   color: #B6BCBF;
+  list-style-type: none;
 }
