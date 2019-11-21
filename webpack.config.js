@@ -8,7 +8,9 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
+        about: './src/about.js',
+        analytics: './src/analytics.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -26,7 +28,13 @@ module.exports = {
             {
                 test: /\.css$/i,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    (isDev ? 'style-loader' :
+                      {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: "../",
+                        }
+                    }),
                     'css-loader',
                     'postcss-loader'
                 ]
@@ -35,7 +43,7 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader?name=src/images/[name].[ext]',
+                    'file-loader?name=images/[name].[ext]',
                     {
                         loader: 'image-webpack-loader'
                     }
@@ -43,14 +51,14 @@ module.exports = {
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=./src/fonts/[name].[ext]'
+                loader: 'file-loader?name=fonts/[name].[ext]'
             }
 
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css'
+            filename: 'styles/[name].[contenthash].css'
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,

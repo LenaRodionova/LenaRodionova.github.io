@@ -10,6 +10,7 @@
   <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
+<script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 <body>
 
 <header class="header_white">
@@ -215,5 +216,4 @@
 </footer>
 
 </body>
-<script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </html>
