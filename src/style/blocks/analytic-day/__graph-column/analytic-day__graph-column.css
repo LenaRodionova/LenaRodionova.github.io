@@ -1,0 +1,12 @@
+.analytic-day__graph-column {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  height: 5%;
+}
+
+@media (max-width: 600px) {
+  .analytic-day__graph-column {
+    grid-template-columns: 20% 80%;
+  }
+
+}

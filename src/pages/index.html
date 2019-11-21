@@ -25,8 +25,8 @@
   <div class="header__title">
     <h1 class="header__service-label">Что в мире творится?</h1>
     <p class="header__paragraph">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-    <form name="search-form">
-      <input class="search-form__input" placeholder="Введите тему новости">
+    <form class="search-form" name="search-form">
+      <input class="search-form__input" placeholder="Введите тему новости" required>
       <button class="search-form__button" type="submit">Поиск</button>
     </form>
   </div>
@@ -34,7 +34,7 @@
 
 <section class="preloader">
   <div class="preloader__circle"></div>
-  <p class="preloader__paragraph">Идет поиск новостей...</p>
+  <h3 class="preloader__paragraph">Идет поиск новостей...</h3>
 </section>
 
 <section class="error">
@@ -151,7 +151,7 @@
     </a>
   </div>
 </footer>
-</body>
 <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
 </html>
 

@@ -1,0 +1,18 @@
+.analytic-day__graph-count {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  color: #b6bcbf;
+}
+
+@media (max-width: 600px) {
+  .analytic-day__graph-count {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 320px) {
+  .analytic-day__graph-count {
+    display: none;
+  }
+}

@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>Аналитика</title>
-  <link href='<%=htmlWebpackPlugin.files.chunks.main.css %>' rel="stylesheet">
+  <link href='<%=htmlWebpackPlugin.files.chunks.analytics.css %>' rel="stylesheet">
   <link href="<%=require('../images/favicon.png')%>" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
@@ -30,49 +30,49 @@
   <p class="analytics__paragraph">Упоминаний в загаловках:<span class="analytics__paragraph-bold"> 235</span></p>
 </section>
 
-<section class="analyticDay">
-  <h3 class="analyticDay__title">Аналитика по дням</h3>
-  <div class="analyticDay__graph">
-    <div class="analyticDay__graph-title">
-      <p class="analyticDay__graph-first-column">ДАТА</p>
+<section class="analytic-day">
+  <h3 class="analytic-day__title">Аналитика по дням</h3>
+  <div class="analytic-day__graph">
+    <div class="analytic-day__graph-title">
+      <p class="analytic-day__graph-first-column">ДАТА</p>
       <p>КОЛ-ВО УПОМИНАНИЙ</p>
     </div>
-    <div class="analyticDay__graph-count">
+    <div class="analytic-day__graph-count">
       <p>0</p>
       <p>25</p>
       <p>50</p>
       <p>75</p>
       <p>100</p>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:1%">1</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:1%">1</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:50%">50</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:50%">50</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:15%">15</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:15%">15</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:15%">15</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:15%">15</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:15%">15</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:15%">15</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:15%">15</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:15%">15</div>
     </div>
-    <div class="analyticDay__graph-column">
-      <p class="analyticDay__graph-column-paragraph">19, пн</p>
-      <div class="analyticDay__graph-item" style="width:15%">15</div>
+    <div class="analytic-day__graph-column">
+      <p class="analytic-day__graph-column-paragraph">19, пн</p>
+      <div class="analytic-day__graph-item" style="width:15%">15</div>
     </div>
-    <div class="analyticDay__graph-count">
+    <div class="analytic-day__graph-count">
       <p>0</p>
       <p>25</p>
       <p>50</p>
@@ -100,6 +100,6 @@
     </a>
   </div>
 </footer>
-</body>
 <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
+</body>
 </html>

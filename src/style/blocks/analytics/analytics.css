@@ -1,7 +1,7 @@
 @import url('__title/analytics__title.css');
 @import url('__paragraph/analytics__paragraph.css');
-@import url('__paragraph-bold/analytics__paragraph_bold.css');
-@import url('__paragraph-grey/analytics__paragraph_grey.css');
+@import url('__paragraph-bold/analytics__paragraph-bold.css');
+@import url('__paragraph-grey/analytics__paragraph-grey.css');
 
 .analytics {
   height: 20%;
