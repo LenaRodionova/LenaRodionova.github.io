@@ -6,12 +6,11 @@
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>Главная</title>
-  <link href='style.7c6104ff11f31f53ea28.css' rel="stylesheet">
-  <link href="src/images/favicon.png" rel="shortcut icon" type="image/png"/>
+  <link href='styles/main.269b74ce98b7dca429d0.css' rel="stylesheet">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
-<body>
-
+<body class="body">
 <header class="header">
   <nav class="header__menu">
     <p class="header__service-name">NewsAnalyzer</p>
@@ -24,24 +23,24 @@
     </ul>
   </nav>
   <div class="header__title">
-    <h1>Что в мире творится?</h1>
-    <p>Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-    <form name="find">
-      <input class="search" placeholder="Введите тему новости">
-      <button class="button" type="submit">Поиск</button>
+    <h1 class="header__service-label">Что в мире творится?</h1>
+    <p class="header__paragraph">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
+    <form name="search-form">
+      <input class="search-form__input" placeholder="Введите тему новости" required>
+      <button class="search-form__button" type="submit">Поиск</button>
     </form>
   </div>
 </header>
 
 <section class="preloader">
-  <div class="circle-preloader"></div>
-  <p>Идет поиск новостей...</p>
+  <div class="preloader__circle"></div>
+  <p class="preloader__paragraph">Идет поиск новостей...</p>
 </section>
 
 <section class="error">
-  <img alt="Ошибка" src="src/images/not_found.png">
-  <h3>Ничего не найдено</h3>
-  <p>К сожалению по вашему запросу ничего не найдено</p>
+  <img alt="Ошибка" src="images/not_found.png">
+  <h3 class="error__title">Ничего не найдено</h3>
+  <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
 </section>
 
 <article class="finding">
@@ -53,77 +52,77 @@
   <div class="finding__cards">
     <!--пример карточки, которые потом будут создаваться через js-->
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
     <div class="finding__card">
-      <img alt="Картинка из новости" src="src/images/news.jpg">
+      <img alt="Картинка из новости" src="images/news.jpg">
       <div class="finding__card-content">
-        <p>2 августа, 2019</p>
-        <h3>Национальное достояние – парки</h3>
-        <p>В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+        <p class="finding__card-paragraph">2 августа, 2019</p>
+        <h3 class="finding__card-title">Национальное достояние – парки</h3>
+        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
           складываться система национальных парков – охраняемых территорий,
           где и сегодня каждый может приобщиться к природе.</p>
-        <a href="#">Лента.ру</a>
+        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
       </div>
     </div>
   </div>
-  <button class="finding_button-more">Показать ещё</button>
+  <button class="finding__button-more">Показать ещё</button>
 </article>
 
 <main class="main">
-  <img alt="Фотография автора" class="main__photo" src="src/images/author_avatar.png">
+  <img alt="Фотография автора" class="main__photo" src="images/author_avatar.png">
   <div class="main__text">
     <h2 class="main__title">Об авторе</h2>
     <p class="main__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
@@ -138,20 +137,21 @@
   <p class="footer__paragraph">&#169;2019 Supersite</p>
   <nav class="footer__menu">
     <ul class="footer__menu-list">
-      <li><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
-      <li><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
-      <li><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="index.html" target="_self">Главная</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="about.html" target="_self">О проекте</a></li>
+      <li class="footer__menu-item"><a class="footer__menu-link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
     </ul>
   </nav>
   <div class="footer__links">
     <a class="footer__links-link" href="https://https://github.com">
-      <img alt="Логотип гита" class="footer__links-img" src="src/images/git_link.png">
+      <img alt="Логотип гита" class="footer__links-img" src="images/git_link.png">
     </a>
     <a class="footer__links-link" href="https://github.comk.com">
-      <img alt="Логотип фейсбука" class="footer__links-img" src="src/images/fb_link.png">
+      <img alt="Логотип фейсбука" class="footer__links-img" src="images/fb_link.png">
     </a>
   </div>
 </footer>
 </body>
+<script src="main.d2504e9fded8e63b44e0.js"></script>
 </html>
 
