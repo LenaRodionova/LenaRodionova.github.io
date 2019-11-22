@@ -27,3 +27,6 @@
 
 Какие-либо фреймворки отсуствуют, проект предполагает vanilla JavaScript.
 
+
+Ссылка на GitHub Pages:
+https://lenarodionova.github.io/diploma/
