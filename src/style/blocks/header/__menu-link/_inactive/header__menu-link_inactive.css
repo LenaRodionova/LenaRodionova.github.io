@@ -1,3 +1,7 @@
 .header__menu-link_inactive {
   color: #b6bcbf;
 }
+
+.header__menu-link_inactive:hover {
+  color: #fff;
+}

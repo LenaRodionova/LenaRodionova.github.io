@@ -2,6 +2,7 @@
 @import url('_inactive/header__menu-link_inactive.css');
 @import url('_selected-white/header__menu-link_selected-white.css');
 @import url('_selected-black/header__menu-link_selected-black.css');
+@import url('_hover/header__menu-link_hover.css');
 
 .header__menu-link {
   text-decoration: none;
