@@ -1,0 +1,21 @@
+@import url('__card/history__card.css');
+@import url('__user/history__user.css');
+@import url('__text/history__text.css');
+@import url('__email/history__email.css');
+@import url('__photo/history__photo.css');
+@import url('__personal/history__personal.css');
+@import url('__username/history__username.css');
+@import url('__date/history__date.css');
+@import url('__button/history__button.css');
+
+
+.history {
+  background-color: #f5f6f7;
+  height: 600px;
+}
+
+@media (max-width: 800px) {
+  .history {
+    height: 550px;
+  }
+}

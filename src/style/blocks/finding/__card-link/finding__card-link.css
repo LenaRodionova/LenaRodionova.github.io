@@ -1,0 +1,8 @@
+.finding__card-link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #b6bcbf;
+  text-transform: uppercase;
+  font-family: Roboto Slab, serif;
+}

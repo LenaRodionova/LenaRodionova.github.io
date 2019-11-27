@@ -1,0 +1,11 @@
+@import url('__paragraph/error__paragraph.css');
+@import url('__title/error__title.css');
+
+.error {
+  height: 370px;
+  background-color: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

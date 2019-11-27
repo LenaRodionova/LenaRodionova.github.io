@@ -1,0 +1,23 @@
+@import url('__menu/header__menu.css');
+@import url('__menu-list/header__menu-list.css');
+@import url('__menu-item/header__menu-item.css');
+@import url('__menu-link/header__menu-link.css');
+@import url('__service-name/header__service-name.css');
+@import url('__title/header__title.css');
+@import url('__service-label/header__service-label.css');
+@import url('__paragraph/header__paragraph.css');
+@import url('_another-page/header_another-page.css');
+
+.header {
+  background-image: url("../../../images/main_img.jpg");
+  background-position: center;
+  height: 576px;
+  color: #ffffff;
+  background-size: auto;
+}
+
+@media (max-width: 600px) {
+  .header {
+    height: 530px;
+  }
+}

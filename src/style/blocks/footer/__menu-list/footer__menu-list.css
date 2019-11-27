@@ -1,0 +1,14 @@
+.footer__menu-list {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  padding-inline-start: 0;
+  margin: 0 0 0 0;
+}
+
+@media (max-width: 600px) {
+  .footer__menu-list {
+    padding-inline-start: 0px;
+    flex-direction: column;
+  }
+}

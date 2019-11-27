@@ -1,0 +1,18 @@
+.analytics__paragraph:first-of-type {
+  font-family: Roboto Regular, serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 6%;
+}
+
+.analytics__paragraph {
+  font-family: Roboto Regular, serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 320px) {
+  .analytics__paragraph:first-of-type {
+    display: none;
+  }
+}

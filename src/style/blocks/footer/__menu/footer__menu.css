@@ -1,0 +1,30 @@
+.footer__menu {
+  width: 30%;
+  position: relative;
+  top: 10%;
+  left: 35%;
+}
+
+@media (max-width: 1270px) {
+  .footer__menu {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__menu {
+    left: 30%;
+    width: 60%;
+    height: 50%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .footer__menu {
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 50%;
+  }
+}

@@ -1,0 +1,7 @@
+.analytic-day__graph {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+}

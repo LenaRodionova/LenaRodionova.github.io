@@ -1,0 +1,9 @@
+.title-link__link_disabled-when-small {
+
+}
+
+@media (max-width: 600px) {
+  .title-link__link_disabled-when-small {
+    display: none;
+  }
+}

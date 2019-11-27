@@ -1,0 +1,9 @@
+.finding__card-content {
+  padding: 5% 5%;
+}
+
+@media (max-width: 600px) {
+.finding__card-content {
+    padding: 2% 5%;
+  }
+}

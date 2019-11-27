@@ -1,0 +1,15 @@
+@import url('../../node_modules/normalize.css/normalize.css');
+@import url('blocks/body/body.css');
+@import url('blocks/header/header.css');
+@import url('blocks/main/main.css');
+@import url('blocks/footer/footer.css');
+@import url('blocks/finding/finding.css');
+@import url('blocks/preloader/preloader.css');
+@import url('blocks/error/error.css');
+@import url('blocks/search-form/search-form.css');
+@import url('blocks/title-link/title-link.css');
+@import url('fonts.css');
+
+p, a, h1 {
+  margin: 0 0 0 0;
+}

@@ -1,0 +1,8 @@
+.analytic-day__graph-title {
+  font-family: Roboto Regular, serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  border-bottom: 1px solid #1a1b22;
+  color: #b6bcbf;
+}

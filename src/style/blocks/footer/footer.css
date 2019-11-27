@@ -1,0 +1,21 @@
+@import url("__menu/footer__menu.css");
+@import url("__links/footer__links.css");
+@import url('./__paragraph/footer__paragraph.css');
+@import url('./__menu-list/footer__menu-list.css');
+@import url('./__links-link/footer__links-link.css');
+@import url('./__links-img/footer__links-img.css');
+@import url('./__menu-link/footer__menu-link.css');
+@import url('./__menu-item/footer__menu-item.css');
+
+.footer {
+  position: relative;
+  height: 70px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    height: 225px;
+    margin-left: 8%;
+  }
+}
+

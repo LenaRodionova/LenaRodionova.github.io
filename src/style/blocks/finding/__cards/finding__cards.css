@@ -1,0 +1,12 @@
+.finding__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2% 2%;
+}
+
+@media (max-width: 600px) {
+  .finding__cards {
+    flex-direction: column;
+  }
+}

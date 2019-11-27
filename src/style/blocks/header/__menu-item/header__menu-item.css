@@ -1,0 +1,7 @@
+@import url('_selected-white/header__menu-item_selected-white.css');
+@import url('_selected-black/header__menu-item_selected-black.css');
+
+.header__menu-item {
+  color: #B6BCBF;
+  list-style-type: none;
+}

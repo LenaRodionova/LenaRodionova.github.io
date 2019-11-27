@@ -1,0 +1,9 @@
+.error__paragraph {
+  font-family: Roboto Regular, serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  max-width: 340px;
+  min-width: 320px;
+  color: #b6bcbf;
+}
