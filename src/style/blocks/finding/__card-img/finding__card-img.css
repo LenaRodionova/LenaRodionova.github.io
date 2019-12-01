@@ -1,0 +1,12 @@
+.finding__card-img {
+    height: 272px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+@media (max-width: 768px) {
+    .finding__card-img {
+        height: 196px;
+    }
+}

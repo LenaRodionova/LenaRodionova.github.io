@@ -4,6 +4,7 @@
   border-radius: 100px;
   height: 62px;
   padding-left: 20px;
+  font-family: Roboto Regular, serif;
 }
 
 .search-form__input::placeholder {

@@ -24,6 +24,10 @@
   background: #2a65cc;
 }
 
+.search-form__button:disabled {
+  background: #666666;
+}
+
 @media (max-width: 600px) {
   .search-form__button {
     margin: 0;

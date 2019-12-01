@@ -26,98 +26,33 @@
     <h1 class="header__service-label">Что в мире творится?</h1>
     <p class="header__paragraph">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
       прошедшую неделю.</p>
-    <form class="search-form" name="search-form">
-      <input class="search-form__input" placeholder="Введите тему новости" required>
+    <form class="search-form" name="search">
+      <input class="search-form__input" name="query" placeholder="Введите тему новости" required>
       <button class="search-form__button" type="submit">Поиск</button>
     </form>
+    <div class="search-form__validation-error search-form__validation-error_invisible"></div>
+
   </div>
 </header>
 
-<section class="preloader">
+<section class="preloader preloader_invisible">
   <div class="preloader__circle"></div>
   <h3 class="preloader__paragraph">Идет поиск новостей...</h3>
 </section>
 
-<section class="error">
+<section class="error error_invisible">
   <img alt="Ошибка" src="<%=require('../images/not_found.png')%>">
   <h3 class="error__title">Ничего не найдено</h3>
   <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
 </section>
 
-<article class="finding">
+<article class="finding finding_invisible">
   <div class="title-link">
     <h2 class="title-link__title">Результаты поиска</h2>
     <a class="title-link__link" href="analytics.html" target="_self">Посмотреть аналитику &#62;</a>
   </div>
 
   <div class="finding__cards">
-    <!--пример карточки, которые потом будут создаваться через js-->
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
-    <div class="finding__card">
-      <img alt="Картинка из новости" src="<%=require('../images/news.jpg')%>">
-      <div class="finding__card-content">
-        <p class="finding__card-paragraph">2 августа, 2019</p>
-        <h3 class="finding__card-title">Национальное достояние – парки</h3>
-        <p class="finding__card-paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-          складываться система национальных парков – охраняемых территорий,
-          где и сегодня каждый может приобщиться к природе.</p>
-        <a class="finding__card-link" href="https://lenta.ru/">Лента.ру</a>
-      </div>
-    </div>
   </div>
   <button class="finding__button-more">Показать ещё</button>
 </article>

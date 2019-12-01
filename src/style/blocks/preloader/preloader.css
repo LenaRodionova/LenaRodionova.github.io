@@ -1,5 +1,6 @@
 @import url('__paragraph/preloader__paragraph.css');
 @import url('__circle/preloader__circle.css');
+@import url('_invisible/preloader_invisible.css');
 
 .preloader {
   background-color: #f5f6f7;

@@ -1,5 +1,6 @@
 @import url('__paragraph/error__paragraph.css');
 @import url('__title/error__title.css');
+@import url('_invisible/error_invisible.css');
 
 .error {
   height: 370px;
