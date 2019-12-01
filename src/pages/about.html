@@ -16,7 +16,8 @@
     <p class="header__service-name header__service-name_black">NewsAnalyzer</p>
     <ul class="header__menu-list">
       <li class="header__menu-item"><a
-          class="header__menu-link header__menu-link_inactive header__menu-link_hover" href="index.html" target="_self">Главная</a></li>
+          class="header__menu-link header__menu-link_inactive header__menu-link_hover" href="index.html" target="_self">Главная</a>
+      </li>
       <li class="header__menu-item header__menu-item_selected-black"><a
           class="header__menu-link header__menu-link_selected-black" href="./about.html" target="_self">О проекте</a>
       </li>
@@ -68,7 +69,7 @@
 
 <main class="main">
   <picture>
-    <source srcset="<%=require('../images/author_avatar-light.png')%>" media="(max-width:768px)">
+    <source media="(max-width:768px)" srcset="<%=require('../images/author_avatar-light.png')%>">
     <img alt="Фотография автора" class="main__photo" src="<%=require('../images/author_avatar.png')%>">
   </picture>
   <div class="main__text">
@@ -90,7 +91,7 @@
   <div class="glide">
     <div class="glide__track" data-glide-el="track">
       <div class="glide__slides">
-        </div>
+      </div>
     </div>
     <div class="glide__bullets" data-glide-el="controls[nav]">
     </div>
@@ -98,7 +99,7 @@
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
     </div>
-    <a href="https://github.com" class="history__button">Открыть в Github &#62;</a>
+    <a class="history__button" href="https://github.com">Открыть в Github &#62;</a>
   </div>
 </article>
 

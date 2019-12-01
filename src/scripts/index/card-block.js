@@ -2,15 +2,15 @@ import {findingButtonMore, findingCards} from "../elements";
 
 export default class CardBlock {
 
-  addCards(cards){
+  addCards(cards) {
     cards.forEach(card => findingCards.appendChild(card.createElement()))
   }
 
-  showButton(){
+  showButton() {
     findingButtonMore.style.display = "inline-block";
   }
 
-  hideButton(){
+  hideButton() {
     findingButtonMore.style.display = "none";
   }
 

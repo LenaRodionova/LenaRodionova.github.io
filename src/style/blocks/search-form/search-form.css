@@ -1,6 +1,7 @@
 @import url('__button/search-form__button.css');
 @import url('__input/search-form__input.css');
 @import url('__validation-error/search-form__validation-error.css');
+
 .search-form {
   margin-top: 10%;
   position: relative;

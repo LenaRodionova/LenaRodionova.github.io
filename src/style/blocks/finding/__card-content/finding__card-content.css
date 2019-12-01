@@ -3,7 +3,7 @@
 }
 
 @media (max-width: 600px) {
-.finding__card-content {
+  .finding__card-content {
     padding: 2% 5%;
   }
 }

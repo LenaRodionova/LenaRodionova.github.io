@@ -1,6 +1,6 @@
 import "./style/style.css";
 import CardManager from "./scripts/index/card-manager";
-import {findingButtonMore, searchInput, searchForm} from "./scripts/elements";
+import {findingButtonMore, searchForm, searchInput} from "./scripts/elements";
 import InputManager from "./scripts/index/input/imput-manager";
 
 const cardManager = new CardManager();
