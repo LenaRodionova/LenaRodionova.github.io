@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width" name="viewport">
   <title>О проекте</title>
-  <link href="styles/about.61649dc092e5290519c0.css" rel="stylesheet">
+  <link href="styles/about.2b1f54a1824fe6b00071.css" rel="stylesheet">
   <link href="images/favicon.png" rel="shortcut icon" type="image/png"/>
   <base target="_blank">
 </head>
@@ -82,13 +82,25 @@
   </div>
 </main>
 
-<article class="history">
+<article class="history history_invisible">
   <div class="title-link">
     <h2 class="title-link__title">История коммитов из GitHub</h2>
     <a class="title-link__link title-link__link_disabled-when-small" href="https://github.com">Открыть в Github
       &#62;</a>
   </div>
-  <div class="glide">
+
+  <section class="preloader preloader_invisible">
+    <div class="preloader__circle"></div>
+    <h3 class="preloader__paragraph">Идет поиск новостей...</h3>
+  </section>
+
+  <section class="error error_invisible">
+    <img alt="Ошибка" src="images/not_found.png">
+    <h3 class="error__title">Ничего не найдено</h3>
+    <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
+  </section>
+
+  <div class="glide glide_invisible">
     <div class="glide__track" data-glide-el="track">
       <div class="glide__slides">
       </div>
@@ -122,6 +134,6 @@
     </a>
   </div>
 </footer>
-<script src="about.f3c7f132223b0f1f115a.js"></script>
+<script src="about.887d90c8b8f9a060fb53.js"></script>
 </body>
 </html>
