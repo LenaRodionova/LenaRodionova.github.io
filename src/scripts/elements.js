@@ -1,5 +1,6 @@
 export const glideSlides = document.querySelector(".glide__slides");
 export const glideBullets = document.querySelector(".glide__bullets");
+export const glide = document.querySelector(".glide");
 
 export const findingCards = document.querySelector(".finding__cards");
 export const findingButtonMore = document.querySelector(".finding__button-more");

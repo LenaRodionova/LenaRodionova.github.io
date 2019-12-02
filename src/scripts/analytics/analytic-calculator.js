@@ -23,8 +23,9 @@ export default class AnalyticCalculator {
           return new Date(card.publishedAt).getDate() === date.getDate()
         })
         .map(card => {
+
           const titleMatchCount = (card.title.match(regexp) || []).length;
-          const descriptionMatchCount = (card.description.match(regexp) || []).length;
+          const descriptionMatchCount = card.description !== null ? (card.description.match(regexp) || []).length : 0;
           return titleMatchCount + descriptionMatchCount;
         })
         .reduce((acc, number, index, array) => {

@@ -1,14 +1,13 @@
-import Commit from "./commit";
-
 export default class GitHubApi {
 
-  constructor() {
-    this._apiUrl = "https://api.github.com/repos";
-    this._repoName = "lenarodionova";
-    this._authorName = "diploma";
+  constructor(apiUrl, repoName, authorName) {
+    this._apiUrl = apiUrl;
+    this._repoName = repoName;
+    this._authorName = authorName;
   }
 
-  getCommitCards(render, finalAction) {
+  getCommitCards(render, finalAction, createCommitCard, loaderStart, onError, onSuccess) {
+    loaderStart();
     fetch(`${this._apiUrl}/${this._repoName}/${this._authorName}/commits`)
       .then(res => {
         if (res.ok) {
@@ -17,18 +16,12 @@ export default class GitHubApi {
           return Promise.reject(res.status)
         }
       })
-      .then(res => res.map(card => new Commit(
-        card.commit.author.name,
-        card.commit.committer.email,
-        card.commit.author.date,
-        card.commit.message,
-        card.author.avatar_url)
-      ))
-      .then(res => render(res))
-      .catch(error => {
-        console.error(error);
-        render([])
+      .then(createCommitCard)
+      .then(res => {
+        render(res);
+        onSuccess();
+        finalAction();
       })
-      .finally(() => finalAction());
+      .catch(onError);
   }
 }

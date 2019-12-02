@@ -7,18 +7,18 @@ const days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 export function getDateForNewsApi() {
   let dataFrom = new Date();
 
-  dataFrom = dataFrom.getFullYear() + "-" + dataFrom.getMonth() + "-" + dataFrom.getDate();
+  dataFrom = dataFrom.getFullYear() + "-" + (dataFrom.getMonth() + 1) + "-" + dataFrom.getDate();
 
   let dataTo = new Date();
   dataTo.setDate(dataTo.getDate() - dateShift);
-  dataTo = dataTo.getFullYear() + "-" + dataTo.getMonth() + "-" + dataTo.getDate();
+  dataTo = dataTo.getFullYear() + "-" + (dataTo.getMonth() + 1) + "-" + dataTo.getDate();
   return {dataFrom, dataTo};
 }
 
 export function formatDateForCards(date) {
-  let month = months[date.getMonth()];
-  let day = date.getDate();
-  let year = date.getFullYear();
+  const month = months[date.getMonth()];
+  const day = date.getDate();
+  const year = date.getFullYear();
   return `${day} ${month}, ${year}`
 
 }

@@ -8,7 +8,7 @@ export default class CardStorage {
   }
 
   saveCardList(cardList) {
-    let cardsObj = JSON.stringify(cardList);
+    const cardsObj = JSON.stringify(cardList);
     localStorage.setItem(this._cardsObjName, cardsObj);
   }
 
@@ -18,6 +18,9 @@ export default class CardStorage {
 
   getCardList() {
     const cardListObj = JSON.parse(localStorage.getItem(this._cardsObjName));
+    if (cardListObj === null) {
+      return new CardList(0, []);
+    }
     const totalResult = cardListObj.totalResult;
     const cards = cardListObj.cards.map(obj => new Card(
       obj.sourceName,

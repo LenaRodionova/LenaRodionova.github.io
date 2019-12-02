@@ -82,13 +82,25 @@
   </div>
 </main>
 
-<article class="history">
+<article class="history history_invisible">
   <div class="title-link">
     <h2 class="title-link__title">История коммитов из GitHub</h2>
     <a class="title-link__link title-link__link_disabled-when-small" href="https://github.com">Открыть в Github
       &#62;</a>
   </div>
-  <div class="glide">
+
+  <section class="preloader preloader_invisible">
+    <div class="preloader__circle"></div>
+    <h3 class="preloader__paragraph">Идет поиск новостей...</h3>
+  </section>
+
+  <section class="error error_invisible">
+    <img alt="Ошибка" src="<%=require('../images/not_found.png')%>">
+    <h3 class="error__title">Ничего не найдено</h3>
+    <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
+  </section>
+
+  <div class="glide glide_invisible">
     <div class="glide__track" data-glide-el="track">
       <div class="glide__slides">
       </div>

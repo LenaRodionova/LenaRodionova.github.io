@@ -1,10 +1,7 @@
-import InputBlock from "./input-block";
-import InputValidator from "./input-validator";
-
 export default class InputManager {
-  constructor(onClick, submitButtonClass) {
-    this._inputBlock = new InputBlock();
-    this._validator = new InputValidator();
+  constructor(onClick, submitButtonClass, inputBlock, inputValidator) {
+    this._inputBlock = inputBlock;
+    this._validator = inputValidator;
     this._onClick = onClick;
     this._submitButtonClass = submitButtonClass;
   }

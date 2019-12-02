@@ -1,13 +1,9 @@
-import CardStorage from "../card-storage";
-import AnalyticBlock from "./analytic-block";
-import AnalyticCalculator from "./analytic-calculator";
-
 export default class AnalyticManager {
 
-  constructor() {
-    this._storage = new CardStorage();
-    this._analitycBlock = new AnalyticBlock();
-    this._analitycCalculator = new AnalyticCalculator();
+  constructor(storage, analyticBlock, analyticCalculator) {
+    this._storage = storage;
+    this._analitycBlock = analyticBlock;
+    this._analitycCalculator = analyticCalculator;
   }
 
   displayAnalytic() {
