@@ -16,7 +16,8 @@
     <p class="header__service-name header__service-name_black">NewsAnalyzer</p>
     <ul class="header__menu-list">
       <li class="header__menu-item"><a
-          class="header__menu-link header__menu-link_inactive header__menu-link_hover" href="index.html" target="_self">Главная</a></li>
+          class="header__menu-link header__menu-link_inactive header__menu-link_hover" href="index.html" target="_self">Главная</a>
+      </li>
       <li class="header__menu-item header__menu-item_selected-black"><a
           class="header__menu-link header__menu-link_selected-black" href="./about.html" target="_self">О проекте</a>
       </li>
@@ -68,7 +69,7 @@
 
 <main class="main">
   <picture>
-    <source srcset="<%=require('../images/author_avatar-light.png')%>" media="(max-width:768px)">
+    <source media="(max-width:768px)" srcset="<%=require('../images/author_avatar-light.png')%>">
     <img alt="Фотография автора" class="main__photo" src="<%=require('../images/author_avatar.png')%>">
   </picture>
   <div class="main__text">
@@ -81,120 +82,36 @@
   </div>
 </main>
 
-<article class="history">
+<article class="history history_invisible">
   <div class="title-link">
     <h2 class="title-link__title">История коммитов из GitHub</h2>
     <a class="title-link__link title-link__link_disabled-when-small" href="https://github.com">Открыть в Github
       &#62;</a>
   </div>
-  <div class="glide">
+
+  <section class="preloader preloader_invisible">
+    <div class="preloader__circle"></div>
+    <h3 class="preloader__paragraph">Идет поиск новостей...</h3>
+  </section>
+
+  <section class="error error_invisible">
+    <img alt="Ошибка" src="<%=require('../images/not_found.png')%>">
+    <h3 class="error__title">Ничего не найдено</h3>
+    <p class="error__paragraph">К сожалению по вашему запросу ничего не найдено</p>
+  </section>
+
+  <div class="glide glide_invisible">
     <div class="glide__track" data-glide-el="track">
       <div class="glide__slides">
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-        <div class="glide__slide">
-          <div class="history__card">
-            <p class="history__date">14 августа, 2019</p>
-            <div class="history__user">
-              <img alt="Автор коммита" class="history__photo" src="<%=require('../images/user_photo.png')%>">
-              <div class="history__personal">
-                <p class="history__username">Антон Долинин</p>
-                <p class="history__email">anton@yandex.ru</p>
-              </div>
-            </div>
-            <p class="history__text">Emmet (formerly Zen Coding) is a web- developer’s toolkit that
-              can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-        </div>
-
       </div>
     </div>
     <div class="glide__bullets" data-glide-el="controls[nav]">
-      <button class="glide__bullet" data-glide-dir="=0"></button>
-      <button class="glide__bullet" data-glide-dir="=1"></button>
-      <button class="glide__bullet" data-glide-dir="=2"></button>
-      <button class="glide__bullet" data-glide-dir="=3"></button>
-      <button class="glide__bullet" data-glide-dir="=4"></button>
     </div>
     <div class="glide__arrows" data-glide-el="controls">
       <button class="glide__arrow glide__arrow--left" data-glide-dir="<">&lt;</button>
       <button class="glide__arrow glide__arrow--right" data-glide-dir=">">&gt;</button>
     </div>
-    <a href="https://github.com" class="history__button">Открыть в Github &#62;</a>
+    <a class="history__button" href="https://github.com">Открыть в Github &#62;</a>
   </div>
 </article>
 

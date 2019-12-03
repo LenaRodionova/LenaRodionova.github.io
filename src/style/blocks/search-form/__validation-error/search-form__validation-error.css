@@ -1,0 +1,21 @@
+@import url('_invisible/search-form__validation-error_invisible.css');
+
+.search-form__validation-error {
+  width: 90%;
+  border: 0;
+  border-radius: 100px;
+  height: 31px;
+  padding-left: 20px;
+  color: #ff0b00;
+  font-family: Roboto Regular, serif;
+  margin-top: 1%;
+
+}
+
+
+@media (max-width: 600px) {
+  .search-form__validation-error {
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+}

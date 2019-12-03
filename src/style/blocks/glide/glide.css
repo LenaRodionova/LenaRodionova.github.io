@@ -3,6 +3,7 @@
 @import url('__arrows/glide__arrows.css');
 @import url('__arrow/glide__arrow.css');
 @import url('__bullet/glide__bullet.css');
+@import url('_invisible/glide_invisible.css');
 
 .glide {
   position: relative;

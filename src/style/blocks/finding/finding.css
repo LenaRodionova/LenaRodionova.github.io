@@ -5,6 +5,8 @@
 @import url('__card-title/finding__card-title.css');
 @import url('__card-paragraph/finding__card-paragraph.css');
 @import url('__card-link/finding__card-link.css');
+@import url('_invisible/finding_invisible.css');
+@import url('__card-img/finding__card-img.css');
 
 .finding {
   background-color: #f5f6f7;

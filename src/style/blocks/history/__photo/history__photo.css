@@ -1,5 +1,8 @@
 .history__photo {
   margin-right: 1%;
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
 }
 
 @media (max-width: 1000px) {
