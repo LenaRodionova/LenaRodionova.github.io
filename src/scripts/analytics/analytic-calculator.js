@@ -2,8 +2,8 @@ import AnalyticData from "./analytic-data";
 
 export default class AnalyticCalculator {
 
-  constructor() {
-    this._dateShift = 7;
+  constructor(dateShift) {
+    this._dateShift = dateShift;
   }
 
   calc(cardList, query) {
@@ -23,18 +23,17 @@ export default class AnalyticCalculator {
           return new Date(card.publishedAt).getDate() === date.getDate()
         })
         .map(card => {
-
           const titleMatchCount = (card.title.match(regexp) || []).length;
           const descriptionMatchCount = card.description !== null ? (card.description.match(regexp) || []).length : 0;
           return titleMatchCount + descriptionMatchCount;
         })
-        .reduce((acc, number, index, array) => {
+        .reduce((acc, number) => {
           return acc + number
         }, 0);
       return {date: date, number: count}
     });
     const titleCount = datesToNumbers.map(item => item.number).reduce((acc, number) => acc + number, 0);
-    return new AnalyticData(newsCount, titleCount, datesToNumbers);
+    return { newsCount, titleCount, datesToNumbers };
 
   }
 

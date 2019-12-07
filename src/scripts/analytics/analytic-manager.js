@@ -1,3 +1,5 @@
+import AnalyticData from "./analytic-data";
+
 export default class AnalyticManager {
 
   constructor(storage, analyticBlock, analyticCalculator) {
@@ -9,7 +11,7 @@ export default class AnalyticManager {
   displayAnalytic() {
     const query = this._storage.getQuery();
     const cardList = this._storage.getCardList();
-    const analyticData = this._analitycCalculator.calc(cardList, query);
+    const analyticData = new AnalyticData(this._analitycCalculator.calc(cardList, query));
     this._analitycBlock.displayAnalyticGraph(analyticData, query);
   }
 
