@@ -5,11 +5,10 @@ import InputManager from "./scripts/index/input/imput-manager";
 import CardBlock from "./scripts/index/card-block";
 import NewsApi from "./scripts/index/news-api";
 import CardStorage from "./scripts/card-storage";
-import {newsApiKey} from "./scripts/params";
+import {maxCardsOnRow, newsApiKey} from "./scripts/params";
 import InputValidator from "./scripts/index/input/input-validator";
 import InputBlock from "./scripts/index/input/input-block";
 
-const maxCardsOnRow = 3;
 const cardBlock = new CardBlock();
 const newsApi = new NewsApi(newsApiKey);
 const storage = new CardStorage();

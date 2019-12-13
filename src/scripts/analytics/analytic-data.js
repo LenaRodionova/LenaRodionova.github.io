@@ -2,10 +2,10 @@ import {formatDateForAnalytic} from "../date-format";
 
 export default class AnalyticData {
 
-  constructor(newsCount, titleCount, datesToNumbers) {
-    this.newsCount = newsCount;
-    this.titleCount = titleCount;
-    this.datesToNumbers = datesToNumbers;
+  constructor(data) {
+    this.newsCount = data.newsCount;
+    this.titleCount = data.titleCount;
+    this.datesToNumbers = data.datesToNumbers;
   }
 
   createElements() {
